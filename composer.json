@@ -1,0 +1,25 @@
+{
+	"name": "dmitriko/wc-user-id-sequence-control",
+	"description": "Wordpress Woocommerce User ID Sequence Control plugin",
+	"minimum-stability": "stable",
+	"license": "GPL",
+	"authors": [
+		{
+			"name": "Walger Marketing",
+			"email": "info@walger-marketing.de"
+		}
+	],
+	"require": {
+		"twig/twig": "^3.7"
+	},
+	"autoload": {
+		"classmap": [
+			"inc/"
+		]
+	},
+	"config": {
+		"allow-plugins": {
+			"php-http/discovery": true
+		}
+	}
+}
