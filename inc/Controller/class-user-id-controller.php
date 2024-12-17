@@ -37,9 +37,6 @@ class User_ID_Controller {
 		// Define the correct table name.
 		$table = $wpdb->prefix . 'users';
 
-		// Sanitize table name (wrapped in backticks for safety).
-		$table = "`{$table}`";
-
 		// Get the current AUTO_INCREMENT value (cached for performance).
 		$cache_key              = 'current_auto_increment_' . $table;
 		$current_auto_increment = wp_cache_get( $cache_key );
@@ -48,8 +45,8 @@ class User_ID_Controller {
 			$current_auto_increment = $wpdb->get_var(
 				$wpdb->prepare(
 					'SELECT AUTO_INCREMENT FROM INFORMATION_SCHEMA.TABLES 
-					WHERE TABLE_NAME = %s AND TABLE_SCHEMA = %s',
-					str_replace( '`', '', $table ),
+                 WHERE TABLE_NAME = %s AND TABLE_SCHEMA = %s',
+					$table,
 					$wpdb->dbname
 				)
 			);
@@ -58,9 +55,9 @@ class User_ID_Controller {
 			wp_cache_set( $cache_key, $current_auto_increment, '', 3600 );
 		}
 
-		// Update AUTO_INCREMENT if it's lower than the desired value.
 		if ( $current_auto_increment < $next_user_id ) {
-			$wpdb->query( 'ALTER TABLE {$table} AUTO_INCREMENT = {$next_user_id}' );
+			$query = "ALTER TABLE `{$table}` AUTO_INCREMENT = {$next_user_id}";
+			$wpdb->query( $query );
 		}
 	}
 }
