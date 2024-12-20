@@ -13,7 +13,7 @@
     "last_updated": "2023-11-16 12:46:00",
     "homepage": "https://www.walger-marketing.de",
     "sections": {
-        "description": "Maintain custom order number format for WooCommerce.",
+        "description": "Provide control on Customer ID number for WooCommerce.",
         "installation": "Click the activate button and that's it.",
         "changelog": "<h4>v1.1.0 released on December 20, 2024</h4><ul><li>Bugfix: Corrected issue with user ID sequence.</li><li>Improvement: Enhanced performance for large databases.</li></ul><h4>v1.0.0 released on October 16, 2024</h4><ul><li>Initial release of WooCommerce Custom number. Ability to customize and use custom order numbers for WooCommerce.</li><li>Feature: Customizable order number format.</li><li>Feature: Utilities for custom number regeneration and reset.</li></ul>"
     },
