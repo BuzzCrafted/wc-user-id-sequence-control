@@ -69,7 +69,7 @@ class Git_Updater implements Updater_Interface {
 		if ( false === $remote || ! $this->cache_allowed ) {
 
 			$remote = wp_remote_get(
-				'https://github.com/dmitri-ko/wc-user-id-sequence-control/releases/download/initial/info.json',
+				'https://github.com/BuzzCrafted/wc-user-id-sequence-control/releases/download/initial/info.json',
 				array(
 					'timeout' => 10,
 					'headers' => array(
@@ -82,7 +82,7 @@ class Git_Updater implements Updater_Interface {
 				return false;
 			}
 
-			set_transient( self::CACHE_KEY, $remote, DAY_IN_SEUICDS );
+			set_transient( self::CACHE_KEY, $remote, DAY_IN_SECONDS );
 
 		}
 
