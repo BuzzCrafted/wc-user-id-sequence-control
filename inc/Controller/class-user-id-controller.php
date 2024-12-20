@@ -56,8 +56,7 @@ class User_ID_Controller {
 		}
 
 		if ( $current_auto_increment < $next_user_id ) {
-			$query = "ALTER TABLE `{$table}` AUTO_INCREMENT = {$next_user_id}";
-			$wpdb->query( $query );
+			$wpdb->query( $wpdb->prepare( "ALTER TABLE `{$table}` AUTO_INCREMENT = %d", $next_user_id ) );
 		}
 	}
 }
