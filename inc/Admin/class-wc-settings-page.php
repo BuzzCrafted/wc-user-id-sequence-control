@@ -48,6 +48,7 @@ class WC_Settings_Page {
 		$this->slug     = $slug;
 		$this->settings = array(
 			new Setting( 'start_id', __( 'Start ID', 'wc-user-id-sequence-control' ), 50000 ),
+			new Setting( 'is_cache_allowed', __( 'Cache', 'wc-user-id-sequence-control' ), false, 'checkbox' ),
 		);
 	}
 

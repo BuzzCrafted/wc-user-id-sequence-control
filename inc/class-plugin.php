@@ -42,7 +42,7 @@ class Plugin {
 	 *
 	 * @var string
 	 */
-	const VERSION = '1.0.0';
+	const VERSION = '1.0.1';
 
 	/**
 	 * The plugin name
@@ -157,7 +157,8 @@ class Plugin {
 			new Updater_Subscriber(
 				new Git_Updater(
 					self::NAME,
-					self::VERSION
+					self::VERSION,
+					\WC_Admin_Settings::get_option( 'is_cache_allowed', false )
 				)
 			),
 			new Details_Subscriber( new Plugin_Details() ),

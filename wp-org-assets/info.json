@@ -4,18 +4,18 @@
     "author": "<a href='https://www.walger-marketing.de'>Walger Marketing</a>",
     "author_profile": "https://www.walger-marketing.de",
     "donate_link": "",
-    "version": "1.1.0",
-    "download_url": "https://github.com/BuzzCrafted/wc-user-id-sequence-control/releases/download/v1.1.0/wc-user-id-sequence-control.zip",
+    "version": "1.1.1",
+    "download_url": "https://github.com/BuzzCrafted/wc-user-id-sequence-control/releases/download/v1.1.1/wc-user-id-sequence-control.zip",
     "requires": "5.6",
     "tested": "6.7.0",
     "requires_php": "8.0",
     "added": "2024-12-18 17:45:00",
-    "last_updated": "2024-12-20 12:46:00",
+    "last_updated": "2025-02-27 17:30:00",
     "homepage": "https://www.walger-marketing.de",
     "sections": {
         "description": "Provide control on Customer ID number for WooCommerce.",
         "installation": "Click the activate button and that's it.",
-        "changelog": "<h4>v1.1.0 released on December 20, 2024</h4><ul><li>Bugfix: Corrected issue with user ID sequence.</li><li>Improvement: Enhanced performance for large databases.</li></ul><h4>v1.0.0 released on December 18, 2024</h4><ul><li>Initial release of WooCommerce Customer ID Sequence control</li></ul>"
+        "changelog": "<h4>v1.1.1 released on February 27, 2025</h4><ul><li>Bugfix: Resolved minor issues with user ID assignment.</li></ul><h4>v1.1.0 released on December 20, 2024</h4><ul><li>Bugfix: Corrected issue with user ID sequence.</li><li>Improvement: Enhanced performance for large databases.</li></ul><h4>v1.0.0 released on December 18, 2024</h4><ul><li>Initial release of WooCommerce Customer ID Sequence control</li></ul>"
     },
     "banners": {
         "low": "https://github.com/BuzzCrafted/wc-user-id-sequence-control/releases/download/initial/banner-772x250.jpg",

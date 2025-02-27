@@ -11,7 +11,7 @@
  * Plugin Name:       Woocommerce User ID Sequence Control
  * Plugin URI:        https://www.walger-marketing.de/wc-user-id-sequence-control
  * Description:       Add custom order number functionality.
- * Version:           1.1.0
+ * Version:           1.1.1
  * Requires at least: 5.6
  * Requires PHP:      8.0
  * Author:            Walger Marketing
